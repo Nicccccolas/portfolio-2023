@@ -50,13 +50,14 @@ app.post('/sendmail', (request, response) => {
   transporter.sendMail({
     to: 'nicolaspantojadi@gmail.com',
     from: 'nicolaspantojadi@gmail.com',
-    subject: 'Job Offers',
+    subject: 'Alert! Job Offert!',
     html: `
     
     <h5>Details Information: </h5>
 
     <ul>
     <li>
+    <p>Select Type</p>
     <p>Name: ${name}</p>
     <p>Email: ${email}</p>
     <p>Job Types: ${jobTypes}</p>
